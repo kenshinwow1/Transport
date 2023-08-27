@@ -13,13 +13,13 @@ public class Transport {
     public Transport(float _speed, int _weight, String _color,byte[] _coordinate){
         System.out.println("Object : ");
         setValues(_speed, _weight,_color, _coordinate);
-        System.out.println(getValues());
+        //System.out.println(getValues());
     }
 
     public Transport(int weight,byte[] coordinate){
         this.weight = weight;
         this.coordinate = coordinate;
-        System.out.println(this.getValues());
+        //System.out.println(this.getValues());
     }
 
 
