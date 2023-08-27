@@ -6,6 +6,10 @@ public class Transport {
     private String color;
     private byte[] coordinate;
 
+    public  Transport(){
+
+    }
+
     public Transport(float _speed, int _weight, String _color,byte[] _coordinate){
         System.out.println("Object : ");
         setValues(_speed, _weight,_color, _coordinate);
@@ -19,7 +23,7 @@ public class Transport {
     }
 
 
-    public void setValues(float speed, int weight, String color, byte[] coordinate){
+    protected void setValues(float speed, int weight, String color, byte[] coordinate){
         this.speed = speed;
         this.weight = weight;
         this.color = color;
