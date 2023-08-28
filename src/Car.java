@@ -3,4 +3,13 @@ public class Car extends Transport{
         super(_speed, _weight,_color, _coordinate);
 
     }
+    @Override
+    public void moveObject(float speed) {
+        System.out.println("Object move speed :" + speed);
+    }
+    @Override
+    public boolean stopObject() {
+        this.speed = 0;
+        return true;
+    }
 }

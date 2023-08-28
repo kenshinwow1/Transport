@@ -1,7 +1,8 @@
 import java.awt.*;
 
-public class Transport {
-    private float speed;
+public abstract class Transport {
+
+    protected float speed;
     private int weight;
     private String color;
     private byte[] coordinate;
@@ -21,6 +22,9 @@ public class Transport {
         this.coordinate = coordinate;
         //System.out.println(this.getValues());
     }
+
+    public abstract void moveObject(float speed);
+    public abstract boolean stopObject();
 
 
     protected void setValues(float speed, int weight, String color, byte[] coordinate){
