@@ -7,6 +7,7 @@ public abstract class Transport {
     private String color;
     private byte[] coordinate;
 
+
     public  Transport(){
 
     }
@@ -43,4 +44,22 @@ public abstract class Transport {
         return info + infoCoordinates;
 
     }
-}
+    class Engine{
+        private boolean isReady;
+        private int km;
+
+        public void seValues(boolean isReady, int km){
+            this.isReady = isReady;
+            this.km = km;
+        }
+
+        public void info() {
+            if(isReady)
+                System.out.println("Engine good");
+            else
+                System.out.println("Engine not good" + km + "Too much km");
+        }
+
+        }
+    }
+
