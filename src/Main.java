@@ -1,4 +1,6 @@
 public class Main {
+
+    //fix2
     public static void main(String[] args) {
         //Transport
         //Car bmw = new Car (50.5f, 2500,"White", new byte[] {0, 0, 0});
