@@ -1,7 +1,25 @@
+import db.DB;
+
 public class Main {
 
     //Car_fly
     public static void main(String[] args) {
+
+        final int count= 10;
+
+
+        Person obj1 = new Person();
+        Person obj2 = new Person();
+        Person.getCount();
+        Person obj3 = new Person();
+        Person.getCount();
+        Person obj4 = new Person();
+        Person.getCount();
+//        Person.count = 5;
+//        System.out.println(Person.count);
+
+        DB db = new DB();
+
         //Transport
         /*Car bmw = new Car (50.5f, 2500,"White", new byte[] {0, 0, 0});
         bmw.engine.seValues(false,2000000);
