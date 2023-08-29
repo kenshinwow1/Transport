@@ -8,6 +8,8 @@ public abstract class Transport {
     private byte[] coordinate;
 
 
+
+
     public  Transport(){
 
     }
