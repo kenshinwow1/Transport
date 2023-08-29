@@ -53,6 +53,10 @@ public abstract class Transport {
             this.km = km;
         }
 
+        public void isReady (boolean isReady){
+            this.isReady = isReady;
+        }
+
         public void info() {
             if(isReady)
                 System.out.println("Engine good");
